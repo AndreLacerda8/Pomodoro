@@ -1,0 +1,78 @@
+h1.title{
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.config{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.work, .pause, .sessions{
+    display: flex;
+    align-items: center;
+}
+
+.more-or-less{
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+
+.more-or-less i{
+    padding: 0.5rem 0;
+    color: rgb(117, 125, 167);
+
+    cursor: pointer;
+
+    transition: filter 0.2s;
+}
+
+.more-or-less i:hover{
+    filter: brightness(0.9);
+}
+
+.qtd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value{
+    box-shadow: 0 4px 4px 0.5px black;
+    background-color: var(--blue);
+    width: 8rem;
+    height: 6.5rem;
+    text-align: center;
+    line-height: 6.5rem;
+    border-radius: 1rem;
+
+    font-size: 4rem;
+    font-weight: bold;
+
+    margin-right: 4rem;
+}
+
+.description{
+    width: 8rem;
+    padding-top: 1rem;
+    margin-right: 4rem;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button.continue{
+    display: block;
+    margin: 5rem auto 0;
+}

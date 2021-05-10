@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/3df7fbe157.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pomodoro.css">
+</head>
+<body>
+    <header>
+        <h1>Pomodoro</h1>
+        <button onclick="Initialize.goHome()" class="home">Início</button>
+    </header>
+
+    <main>
+        <div class="circle">
+            <div class="time">
+                <span></span>
+            </div>
+        </div>
+        <div class="status-and-options">
+            <div class="status">
+                <h3>Trabalho</h3>
+                <div class="complete-sessions complete-work"></div>
+            </div>
+            <button class="options play" onclick="Pomodoro.startPomodoro()">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="options pause" onclick="Pomodoro.stopPomodoro()">
+                <i class="fas fa-pause"></i>
+            </button>
+        </div>
+    </main>
+
+
+    <audio id="end-session" src="audios/endsession1.mp3"></audio>
+    <audio id="end" src="audios/end.mp3"></audio>
+
+
+    <script src="javascript/pomodoro.js"></script>
+</body>
+</html>

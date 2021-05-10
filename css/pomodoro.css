@@ -1,0 +1,131 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 8rem;
+    width: 100vw;
+}
+
+header h1{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+button.home{
+    width: 10rem;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2rem;
+}
+
+main strong{
+    font-size: 4rem;
+    width: 50rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.circle{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+
+    background-color: var(--blue);
+
+    margin-right: 3rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time{
+    width: 16rem;
+    height: 16rem;
+
+    border-radius: 8rem;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--green);
+}
+
+.time.pause{
+    background: var(--yellow);
+}
+
+.time span{
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 14.4rem;
+    text-align: center;
+
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+
+.status-and-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.status{
+    text-align: center;
+}
+
+.status h3{
+    font-size: 3rem;
+    color: var(--green);
+}
+
+.status h3.pause{
+    color: var(--yellow);
+}
+
+.complete-sessions span{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--blue);
+
+    margin: 1rem 0.2rem;
+}
+
+.complete-sessions.complete-work span.complete{
+    background-color: var(--green);
+}
+
+.complete-sessions.complete-pause span.complete{
+    background-color: var(--yellow);
+}
+
+/* A pausa tem uma sessão a menos, então tem que tirar a última bolinha */
+.complete-sessions.complete-pause span:last-child{
+    display: none;
+}
+
+button.options{
+    width: 6rem;
+}
+
+button.options.pause{
+    display: none;
+}
+
+audio{
+    display: none;
+}
